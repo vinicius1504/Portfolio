@@ -1,0 +1,268 @@
+.experience{
+    color: var(--white-100);
+}
+
+.wrapper-experience{
+    padding: 2rem;
+}
+
+.wrapper-experience::before{
+    content: '';
+    margin-left: 0.5rem;
+    background-color: var(--ciane-1);
+    border: 1px solid var(--white-100);
+    border-width: 4px;
+    border-radius: 9999px;
+    height: 0.5rem;
+    width: 0.5rem;
+    display: flex;
+    left: -5%;
+    top: 1.3rem;
+    position: relative;
+    box-shadow: 0px 0px 5px var(--gray-1);
+}
+
+.mw-50 .wrapper-experience:not(:last-child)::after{
+    content: '';
+    margin-left: -1.4rem;
+    background-color: var(--white-100);
+    border-width: 1px;
+    height: 180px;
+    width: 2px;
+    display: flex;
+    position: absolute;
+    margin-top: -6rem;
+    z-index: -1;
+}
+
+.wrapper-experience a{
+    color:var(--ciane-1);
+    font-weight: 500;
+}
+
+.wrapper-experience h3{
+    color: var(--white-100);
+}
+
+.wrapper-experience span{
+    color: var(--gray-3);
+    font-size: .8rem;
+}
+
+.wrapper-experience p{
+    color: var(--white-100);
+}
+
+/* Animações Step-by-Step */
+.step-experience {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.step-experience.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Animação da linha primeiro */
+.step-experience::after {
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.step-experience.visible::after {
+    animation: lineAppear 0.6s ease-out forwards;
+}
+
+/* Animação do ponto */
+.step-experience::before {
+    opacity: 0;
+    transform: scale(0);
+    animation-fill-mode: forwards;
+}
+
+.step-experience.visible::before {
+    animation: pointAppear 0.4s ease-out 0.3s forwards;
+}
+
+/* Animação do conteúdo */
+.step-experience > * {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0.6s;
+}
+
+.step-experience.visible > * {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Keyframes para as animações */
+@keyframes lineAppear {
+    from {
+        opacity: 0;
+        height: 0;
+    }
+    to {
+        opacity: 1;
+        height: 180px;
+    }
+}
+
+@keyframes pointAppear {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Efeito hover melhorado */
+.step-experience:hover {
+    transform: translateX(10px);
+}
+
+.step-experience:hover::before {
+    box-shadow: 0px 0px 15px var(--ciane-1);
+}
+
+/* Responsivo Mobile */
+@media (max-width: 768px) {
+    .experience h1 {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .wrapper-experience {
+        padding: 1.5rem;
+        padding-left: 3rem;
+        position: relative;
+    }
+    
+    .wrapper-experience h3 {
+        font-size: 1.1rem;
+        margin: 8px 0;
+    }
+    
+    .wrapper-experience span {
+        font-size: 0.75rem;
+    }
+    
+    .wrapper-experience p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-top: 8px;
+    }
+    
+    .wrapper-experience a {
+        font-size: 0.9rem;
+    }
+    
+    .wrapper-experience::before {
+        left: 1rem;
+        margin-left: 0;
+        position: absolute;
+        top: 1.3rem;
+    }
+    
+    .mw-50 .wrapper-experience:not(:last-child)::after {
+        height: 150px;
+        margin-top: 0;
+        margin-left: 0;
+        left: 1.15rem;
+        top: 2.8rem;
+        position: absolute;
+    }
+    
+    /* Ajustes das animações para tablet */
+    @keyframes lineAppear {
+        from {
+            opacity: 0;
+            height: 0;
+        }
+        to {
+            opacity: 1;
+            height: 150px;
+        }
+    }
+    
+    .step-experience:hover {
+        transform: translateX(5px);
+    }
+}
+
+@media (max-width: 480px) {
+    .experience h1 {
+        font-size: 1.5rem;
+    }
+    
+    .wrapper-experience {
+        padding: 1rem;
+        padding-left: 2.5rem;
+        position: relative;
+    }
+    
+    .wrapper-experience h3 {
+        font-size: 1rem;
+        margin: 6px 0;
+    }
+    
+    .wrapper-experience span {
+        font-size: 0.7rem;
+    }
+    
+    .wrapper-experience p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        margin-top: 6px;
+    }
+    
+    .wrapper-experience a {
+        font-size: 0.85rem;
+    }
+    
+    .wrapper-experience::before {
+        height: 0.4rem;
+        width: 0.4rem;
+        top: 1rem;
+        left: 0.8rem;
+        margin-left: 0;
+        position: absolute;
+    }
+    
+    .mw-50 .wrapper-experience:not(:last-child)::after {
+        height: 120px;
+        margin-top: 0;
+        margin-left: 0;
+        left: 0.95rem;
+        top: 2.5rem;
+        position: absolute;
+    }
+    
+    /* Ajustes das animações para mobile */
+    @keyframes lineAppear {
+        from {
+            opacity: 0;
+            height: 0;
+        }
+        to {
+            opacity: 1;
+            height: 120px;
+        }
+    }
+    
+    .step-experience:hover {
+        transform: translateX(3px);
+    }
+    
+    .step-experience > * {
+        transition-delay: 0.4s;
+    }
+}

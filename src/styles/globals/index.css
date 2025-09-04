@@ -1,0 +1,288 @@
+@import url(../components/header.css);
+@import url(../components/container1.css);
+@import url(../components/container2.css);
+@import url(../components/container2-mobile.css);
+@import url(../components/container3.css);
+@import url(../components/container4.css);
+@import url(../components/footer.css);
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --black-50: rgb(0, 0, 0, 50%);
+  --black-100: rgb(0, 0, 0, 100%);
+  --black-25: rgba(0, 0, 0, 25%);
+
+  --white-100: #fff;
+
+  --black-all: #111111;
+
+  --gray-1:#27272a;
+  --gray-2: #1c1c1f;
+  --gray-3: rgba(136, 138, 143, 0.767);
+
+  --ciane-1: rgb(49 146 154);
+
+  /* Variáveis para efeito do mouse */
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+}
+
+body{
+  background-color: var(--black-all);
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    radial-gradient(circle, rgba(49, 146, 154, 0.02) 1px, transparent 1px);
+  background-size: 50px 50px, 50px 50px, 100px 100px;
+  background-attachment: fixed;
+  animation: meshWave 20s ease-in-out infinite;
+  position: relative;
+  transition: background-position 0.3s ease-out;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(49, 146, 154, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.02) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(49, 146, 154, 0.02) 0%, transparent 50%);
+  animation: waveOverlay 25s ease-in-out infinite;
+  pointer-events: none;
+  z-index: -1;
+  transition: all 0.3s ease-out;
+}
+
+/* Efeito de deformação do mouse */
+body::after {
+  content: '';
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(49, 146, 154, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.2s ease-out;
+  transform: translate(-50%, -50%);
+  left: var(--mouse-x, 50%);
+  top: var(--mouse-y, 50%);
+}
+
+/* Ativar efeito quando mouse está ativo */
+body.mouse-active::after {
+  opacity: 1;
+}
+
+body.mouse-active::before {
+  background: 
+    radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(49, 146, 154, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(49, 146, 154, 0.03) 0%, transparent 50%);
+}
+
+/* Deformação mais intensa da mesh quando o mouse está ativo */
+body.mouse-active {
+  background-size: 55px 45px, 45px 55px, 110px 90px;
+}
+
+@keyframes meshWave {
+  0%, 100% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+    background-size: 50px 50px, 50px 50px, 100px 100px;
+  }
+  25% {
+    background-position: 10px 5px, -5px 10px, 15px 10px;
+    background-size: 55px 45px, 45px 55px, 110px 90px;
+  }
+  50% {
+    background-position: 20px 10px, -10px 20px, 30px 20px;
+    background-size: 60px 40px, 40px 60px, 120px 80px;
+  }
+  75% {
+    background-position: 10px 15px, -15px 10px, 45px 30px;
+    background-size: 45px 55px, 55px 45px, 90px 110px;
+  }
+}
+
+@keyframes waveOverlay {
+  0%, 100% {
+    transform: translateX(0px) translateY(0px);
+    opacity: 1;
+  }
+  33% {
+    transform: translateX(30px) translateY(-20px);
+    opacity: 0.8;
+  }
+  66% {
+    transform: translateX(-20px) translateY(30px);
+    opacity: 0.6;
+  }
+}
+.section{
+  max-width: 1080px;
+  margin: 80px auto 0px auto;
+}
+
+.mw-50 {
+  margin-top: 120px;
+}
+
+a{
+  text-decoration: none;
+  color: var(--white-100);
+}
+
+
+*::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: var(--gray-1);
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: var(--gray-2);
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: var(--black-50);
+}
+
+.glasseffect{
+      backdrop-filter: blur(7px) saturate(200%);
+    -webkit-backdrop-filter: blur(7px) saturate(200%);
+    background-color: rgba(99, 99, 99, 0.42);
+}
+
+/* Responsividade dos espaçamentos */
+@media (max-width: 768px) {
+    .section {
+        margin: 60px auto 0px auto;
+    }
+    
+    .mw-50 {
+        margin-top: 80px;
+    }
+    
+    .my-work-wrapper {
+        margin-top: 80px;
+    }
+    
+    footer {
+        margin-top: 100px;
+    }
+    
+    /* Desativar efeito do mouse em tablets e móveis */
+    body::after {
+        display: none;
+    }
+    
+    body.mouse-active {
+        background-size: 50px 50px, 50px 50px, 100px 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        margin: 40px auto 0px auto;
+    }
+    
+    .mw-50 {
+        margin-top: 60px;
+    }
+    
+    .my-work-wrapper {
+        margin-top: 60px;
+    }
+    
+    footer {
+        margin-top: 80px;
+    }
+    
+    /* Desativar completamente o efeito do mouse em móveis */
+    body::after,
+    body::before {
+        animation: none !important;
+    }
+}
+
+/* Melhorias gerais para mobile */
+@media (max-width: 768px) {
+    .section {
+        max-width: 100%;
+        margin: 15px auto 0;
+        padding: 0 15px;
+    }
+    
+    body {
+        font-size: 14px;
+    }
+    
+    h1 {
+        font-size: 1.8rem !important;
+    }
+    
+    h2 {
+        font-size: 1.5rem !important;
+    }
+    
+    h3 {
+        font-size: 1.2rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        margin: 10px auto 0;
+        padding: 0 10px;
+    }
+    
+    body {
+        font-size: 13px;
+    }
+    
+    h1 {
+        font-size: 1.5rem !important;
+    }
+    
+    h2 {
+        font-size: 1.3rem !important;
+    }
+    
+    h3 {
+        font-size: 1.1rem !important;
+    }
+    
+    p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+}
