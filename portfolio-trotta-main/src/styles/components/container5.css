@@ -1,0 +1,243 @@
+/* Container5 - Contact Form */
+.contact-wrapper {
+    padding: 3em;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    min-height: 80vh;
+}
+
+.contact-title {
+    color: var(--white-100);
+    text-align: center;
+}
+
+.contact-title h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--ciane-1);
+    font-weight: 700;
+}
+
+.contact-title p {
+    font-size: 1.1rem;
+    color: var(--gray-3);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--gray-1);
+    border-radius: 15px;
+    padding: 3rem;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.contact-form:hover {
+    border-color: var(--ciane-1);
+    box-shadow: 0 10px 30px rgba(49, 146, 154, 0.1);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.form-group.full-width {
+    margin-bottom: 2rem;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: var(--white-100);
+    font-size: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 1rem;
+    border: 1px solid var(--gray-1);
+    border-radius: 10px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--white-100);
+    transition: all 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--gray-3);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--ciane-1);
+    box-shadow: 0 0 0 2px rgba(49, 146, 154, 0.2);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+    font-family: inherit;
+}
+
+.form-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border: 1px solid var(--gray-1);
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--white-100);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    filter: brightness(110%);
+}
+
+.btn-whatsapp {
+    border-color: #25D366;
+    background: rgba(37, 211, 102, 0.1);
+}
+
+.btn-whatsapp:hover {
+    border-color: #25D366;
+    background: rgba(37, 211, 102, 0.2);
+    color: #25D366;
+}
+
+.btn-email {
+    border-color: var(--ciane-1);
+    background: rgba(49, 146, 154, 0.1);
+}
+
+.btn-email:hover {
+    border-color: var(--ciane-1);
+    background: rgba(49, 146, 154, 0.2);
+    color: var(--ciane-1);
+}
+
+.btn i {
+    font-size: 1.2rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        padding: 2rem 1rem;
+    }
+    
+    .contact-form {
+        padding: 2rem;
+    }
+    
+    .contact-title h1 {
+        font-size: 2rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .form-buttons {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .btn {
+        padding: 1.2rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-wrapper {
+        padding: 1.5rem 1rem;
+    }
+    
+    .contact-form {
+        padding: 1.5rem;
+    }
+    
+    .contact-title h1 {
+        font-size: 1.8rem;
+    }
+    
+    .contact-title p {
+        font-size: 1rem;
+    }
+}
+
+/* Animações sutis */
+.contact-form {
+    animation: fadeInUp 0.6s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efeito de foco nos inputs */
+.form-group input:focus,
+.form-group textarea:focus {
+    transform: translateY(-2px);
+}
+
+/* Estilo para campos obrigatórios */
+.form-group label::after {
+    content: ' *';
+    color: #ff6b6b;
+    display: none;
+}
+
+.form-group:has(input[required]) label::after,
+.form-group:has(textarea[required]) label::after {
+    display: inline;
+}

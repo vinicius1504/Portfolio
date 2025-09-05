@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { useLanguage } from '../contexts/LanguageContext.jsx';
+import { useLanguage } from './LanguageContext.jsx';
 
 const LanguageSync = () => {
   const location = useLocation();

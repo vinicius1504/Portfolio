@@ -1,8 +1,8 @@
 import React from 'react';
-import { useLanguage } from '../contexts/LanguageContext.jsx';
-import sistemaFinanceiroImg from "../imgs/projetos/sistema de controle financeiro.png";
-import ecommerceGamesImg from "../imgs/projetos/ecomercegames.jpg";
-import backupSystemImg from "../imgs/projetos/backup.png";
+import { useLanguage } from '../../../contexts/LanguageContext/LanguageContext.jsx';
+import sistemaFinanceiroImg from "../../../assets/images/projects/sistema de controle financeiro.png";
+import ecommerceGamesImg from "../../../assets/images/projects/ecomercegames.jpg";
+import backupSystemImg from "../../../assets/images/projects/backup.png";
 
 const Container4Dynamic = () => {
     const { t } = useLanguage();

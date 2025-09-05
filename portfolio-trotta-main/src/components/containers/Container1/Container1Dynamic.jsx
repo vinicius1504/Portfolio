@@ -1,4 +1,4 @@
-import { useLanguage } from '../contexts/LanguageContext.jsx';
+import { useLanguage } from '../../../contexts/LanguageContext/LanguageContext.jsx';
 
 const Container1Dynamic = () => {
     const { t } = useLanguage();
