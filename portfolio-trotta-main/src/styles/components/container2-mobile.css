@@ -42,12 +42,12 @@
     }
     
     .slider .slide-track {
-        width: calc(180px * 14);
+        width: calc(100px * 14);
         animation: scroll 25s linear infinite alternate;
     }
     
     .slider2 .slide-track2 {
-        width: calc(180px * 14);
+        width: calc(100px * 14);
         animation: scroll-right 25s linear infinite alternate;
     }
 }
