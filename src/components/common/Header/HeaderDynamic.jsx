@@ -39,7 +39,7 @@ const HeaderDynamic = () => {
                     <a href="#experience" onClick={(e) => { e.preventDefault(); scrollToSection('experience'); }}>
                         {t('header.navigation.projects')}
                     </a>
-                    <a href="https://wa.me/67999710088" target="_blank" rel="noreferrer">
+                    <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>
                         {t('header.navigation.contact')}
                     </a>
                 </div>
@@ -56,9 +56,9 @@ const HeaderDynamic = () => {
                         <button onClick={() => scrollToSection('experience')} title={t('header.navigation.projects')}>
                             <span className="material-icons">work</span>
                         </button>
-                        <a href="https://wa.me/67999710088" target="_blank" rel="noreferrer" title={t('header.navigation.contact')}>
+                        <button onClick={() => scrollToSection('contact')} title={t('header.navigation.contact')}>
                             <span className="material-icons">chat</span>
-                        </a>
+                        </button>
                         <button onClick={toggleMobileMenu} className="menu-toggle" title="Menu">
                             <span className="material-icons">more_vert</span>
                         </button>

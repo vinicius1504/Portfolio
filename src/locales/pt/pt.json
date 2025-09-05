@@ -5,13 +5,13 @@
             "about": "Sobre",
             "myWork": "Meu Trabalho",
             "projects": "Projetos",
-            "contact": "Whatsapp"
+            "contact": "Contato"
         }
     },
     "container1": {
         "name": "Vinicius Leite",
         "location": "Campo Grande - Mato Grosso do Sul",
-        "description": "Tenho 22 anos e sou Developer JR. Venho programando por mais de 3 anos. Crio websites, sistemas, Automações Web."
+        "description": "Tenho 22 anos e sou Desenvolvedor JR. Venho programando por mais de 3 anos. Crio websites, sistemas, Automações Web."
     },
     "container2": {
         "title": "Com o que eu trabalho"
@@ -20,21 +20,22 @@
         "title": "Experience",
         "experiences": 
         [
+            
             {
-                "url": "https://www.tahto.com.br",
-                "website": "www.tahto.com.br",
-                "position": "Atendente em Call Center",
-                "period": "Maio, 2021 - Março, 2022",
-                "description": "Atendimento ao cliente em operações de telecom: registro de chamados, diagnóstico inicial, orientação de procedimentos e encaminhamento para áreas técnicas."
+                "url": "https://globoo.io",
+                "website": "globoo.io",
+                "position": "Desenvolvedor Jr",
+                "period": "Abril, 2024 - Atualmente",
+                "description": "Desenvolvimento e manutenção de aplicações web; implementação de APIs e integrações; participação em sprints, code review e documentação; suporte a deploys."
             },
-            {
-                "url": "https://www.telemont.com.br",
-                "website": "www.telemont.com.br",
-                "position": "Auxiliar Técnico de Projetos II",
-                "period": "Maio, 2022 - Fevereiro, 2023",
-                "description": "Apoio à engenharia de projetos de telecom: atualização de cadastros e plantas, controle de documentação técnica, suporte às equipes de campo e interface com fornecedores."
+                        {
+                "url": "https://www.limaepegolo.com.br",
+                "website": "www.limaepegolo.com.br",
+                "position": "Auxiliar de Tecnologia",
+                "period": "Novembro, 2023 - Outubro, 2024",
+                "description": "Suporte de TI e atendimento a usuários: abertura/triagem de chamados, configuração de estações e pacotes Office, apoio a sistemas jurídicos, documentação e controle de SLA."
             },
-            {
+                        {
                 "url": "https://www.aceleracaojuridica.com.br",
                 "website": "www.aceleracaojuridica.com.br",
                 "position": "Desenvolvedor Back-end (PHP)",
@@ -42,19 +43,14 @@
                 "description": "Desenvolvimento back-end em PHP: criação de endpoints e integrações, manutenção corretiva e evolutiva, consultas SQL e versionamento com Git."
             },
             {
-                "url": "https://www.limaepegolo.com.br",
-                "website": "www.limaepegolo.com.br",
-                "position": "Auxiliar de Tecnologia",
-                "period": "Novembro, 2023 - Outubro, 2024",
-                "description": "Suporte de TI e atendimento a usuários: abertura/triagem de chamados, configuração de estações e pacotes Office, apoio a sistemas jurídicos, documentação e controle de SLA."
-            },
-            {
-                "url": "https://globoo.io",
-                "website": "globoo.io",
-                "position": "Desenvolvedor Jr",
-                "period": "Abril, 2024 - Atualmente",
-                "description": "Desenvolvimento e manutenção de aplicações web; implementação de APIs e integrações; participação em sprints, code review e documentação; suporte a deploys."
+                "url": "https://www.telemont.com.br",
+                "website": "www.telemont.com.br",
+                "position": "Auxiliar Técnico de Projetos II",
+                "period": "Maio, 2022 - Fevereiro, 2023",
+                "description": "Apoio à engenharia de projetos de telecom: atualização de cadastros e plantas, controle de documentação técnica, suporte às equipes de campo e interface com fornecedores."
             }
+
+
         ]
     },
     "container4": {
@@ -87,6 +83,24 @@
         "copyright": "© 2024 Desenvolvido por",
         "createdIn": "| Criado no Brasil",
         "name": "Vinicius Leite"
+    },
+    "contact": {
+        "title": "Entre em Contato",
+        "subtitle": "Vamos trabalhar juntos! Entre em contato através do WhatsApp ou email.",
+        "nameLabel": "Nome",
+        "namePlaceholder": "Digite seu nome",
+        "phoneLabel": "Telefone",
+        "phonePlaceholder": "(67) 9 9999-9999",
+        "messageLabel": "Mensagem",
+        "messagePlaceholder": "Digite sua mensagem...",
+        "whatsappButton": "Enviar via WhatsApp",
+        "emailButton": "Enviar por Email",
+        "fillRequired": "Por favor, preencha todos os campos obrigatórios.",
+        "whatsappPrefix": "Olá! Meu nome é",
+        "emailSubject": "Contato via Portfolio",
+        "emailName": "Nome",
+        "emailPhone": "Telefone",
+        "emailMessage": "Mensagem"
     },
     "common": {
         "loading": "Carregando...",
