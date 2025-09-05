@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { useLanguage } from '../contexts/LanguageContext.jsx';
+import { useLanguage } from '../../../contexts/LanguageContext/LanguageContext.jsx';
 
 const Container3Dynamic = () => {
     const { t } = useLanguage();

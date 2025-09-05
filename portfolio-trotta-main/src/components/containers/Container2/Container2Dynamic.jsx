@@ -1,17 +1,17 @@
 import React from 'react';
-import { useLanguage } from '../contexts/LanguageContext.jsx';
-import htmlIcon from '../imgs/icons/html-icon.svg';
-import cssIcon from '../imgs/icons/css-icon.svg';
-import jsIcon from '../imgs/icons/js-icon.svg';
-import angularIcon from '../imgs/icons/angularjs.svg';
-import typescriptIcon from '../imgs/icons/typescript-icon.svg';
-import nextjsIcon from '../imgs/icons/nextjs-icon.svg';
-import nodejsIcon from '../imgs/icons/nodejs-icon.svg';
-import javaIcon from '../imgs/icons/java-icon.svg';
-import mongoIcon from '../imgs/icons/mongo-icon.svg';
-import gitIcon from '../imgs/icons/git-icon.svg';
-import PythonIcon from '../imgs/icons/python.svg';
-import PHPIcon from '../imgs/icons/php.svg';
+import { useLanguage } from '../../../contexts/LanguageContext/LanguageContext.jsx';
+import htmlIcon from '../../../assets/images/icons/html-icon.svg';
+import cssIcon from '../../../assets/images/icons/css-icon.svg';
+import jsIcon from '../../../assets/images/icons/js-icon.svg';
+import angularIcon from '../../../assets/images/icons/angularjs.svg';
+import typescriptIcon from '../../../assets/images/icons/typescript-icon.svg';
+import nextjsIcon from '../../../assets/images/icons/nextjs-icon.svg';
+import nodejsIcon from '../../../assets/images/icons/nodejs-icon.svg';
+import javaIcon from '../../../assets/images/icons/java-icon.svg';
+import mongoIcon from '../../../assets/images/icons/mongo-icon.svg';
+import gitIcon from '../../../assets/images/icons/git-icon.svg';
+import PythonIcon from '../../../assets/images/icons/python.svg';
+import PHPIcon from '../../../assets/images/icons/php.svg';
 
 const Container2Dynamic = () => {
     const { t } = useLanguage();

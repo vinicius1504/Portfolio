@@ -5,13 +5,13 @@
             "about": "Sobre",
             "myWork": "Meu Trabalho",
             "projects": "Projetos",
-            "contact": "Whatsapp"
+            "contact": "Contato"
         }
     },
     "container1": {
         "name": "Vinicius Leite",
         "location": "Campo Grande - Mato Grosso do Sul",
-        "description": "Tenho 22 anos e sou Developer JR. Venho programando por mais de 3 anos. Crio websites, sistemas, Automações Web."
+        "description": "Tenho 22 anos e sou Desenvolvedor JR. Venho programando por mais de 3 anos. Crio websites, sistemas, Automações Web."
     },
     "container2": {
         "title": "Com o que eu trabalho"
@@ -87,6 +87,24 @@
         "copyright": "© 2024 Desenvolvido por",
         "createdIn": "| Criado no Brasil",
         "name": "Vinicius Leite"
+    },
+    "contact": {
+        "title": "Entre em Contato",
+        "subtitle": "Vamos trabalhar juntos! Entre em contato através do WhatsApp ou email.",
+        "nameLabel": "Nome",
+        "namePlaceholder": "Digite seu nome",
+        "phoneLabel": "Telefone",
+        "phonePlaceholder": "(67) 9 9999-9999",
+        "messageLabel": "Mensagem",
+        "messagePlaceholder": "Digite sua mensagem...",
+        "whatsappButton": "Enviar via WhatsApp",
+        "emailButton": "Enviar por Email",
+        "fillRequired": "Por favor, preencha todos os campos obrigatórios.",
+        "whatsappPrefix": "Olá! Meu nome é",
+        "emailSubject": "Contato via Portfolio",
+        "emailName": "Nome",
+        "emailPhone": "Telefone",
+        "emailMessage": "Mensagem"
     },
     "common": {
         "loading": "Carregando...",

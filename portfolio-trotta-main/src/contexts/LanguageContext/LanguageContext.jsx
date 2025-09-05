@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import enTranslations from '../locales/en.json';
-import ptTranslations from '../locales/pt.json';
+import enTranslations from '../../locales/en/en.json';
+import ptTranslations from '../../locales/pt/pt.json';
 
 const LanguageContext = createContext();
 

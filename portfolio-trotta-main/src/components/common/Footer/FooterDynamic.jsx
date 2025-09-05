@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLanguage } from '../contexts/LanguageContext.jsx';
+import { useLanguage } from '../../../contexts/LanguageContext/LanguageContext.jsx';
 
 const FooterDynamic = () => {
     const { t } = useLanguage();

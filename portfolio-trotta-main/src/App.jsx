@@ -1,12 +1,10 @@
-import IndexView from "./views/indexView.jsx";
-import { LanguageProvider } from "./contexts/LanguageContext.jsx";
-import MouseMeshEffect from "./components/MouseMeshEffect.jsx";
+import IndexView from "./pages/Home/indexView.jsx";
+import { LanguageProvider } from "./contexts/LanguageContext/LanguageContext.jsx";
 
 const App = () => {
   return (
     <LanguageProvider>
       <div className="App">
-        <MouseMeshEffect />
         <IndexView />
       </div>
     </LanguageProvider>

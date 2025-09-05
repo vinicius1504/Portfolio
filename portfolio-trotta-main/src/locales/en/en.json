@@ -5,7 +5,7 @@
       "about": "About",
       "myWork": "My Work", 
       "projects": "Projects",
-      "contact": "Contact Me"
+      "contact": "Contact"
     }
   },
   "container1": {
@@ -87,6 +87,24 @@
     "copyright": "© 2024 Builded by",
     "createdIn": "| Created in Brazil",
     "name": "Vinicius Leite"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Let's work together! Contact me via WhatsApp or email.",
+    "nameLabel": "Name",
+    "namePlaceholder": "Enter your name",
+    "phoneLabel": "Phone",
+    "phonePlaceholder": "(67) 9 9999-9999",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Enter your message...",
+    "whatsappButton": "Send via WhatsApp",
+    "emailButton": "Send by Email",
+    "fillRequired": "Please fill in all required fields.",
+    "whatsappPrefix": "Hello! My name is",
+    "emailSubject": "Contact via Portfolio",
+    "emailName": "Name",
+    "emailPhone": "Phone",
+    "emailMessage": "Message"
   },
   "common": {
     "loading": "Loading...",
