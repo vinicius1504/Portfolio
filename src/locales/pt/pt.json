@@ -56,27 +56,98 @@
     "container4": {
         "title": "Meus Projetos",
         "projects": [
+              {
+                "title": "Globoo.io",
+                "description": "Sistema completo financeiro, contendo: exchange, crowndfunding, tokenizadora, bank, comunity cicle",
+                "technologies": ["Angular", "Node.js", "AWS", "C++"],
+                "github": "https://app.globoo.io",
+                "image": "globoo.png",
+                "collaborators": [
+                    {
+                        "name": "Vinicius Leite",
+                        "role": "Desenvolvedor Front-end",
+                        "image": "vinicius-colaborador.jpg"
+                    },
+                    {
+                        "name": "Pedro Trotta",
+                        "role": "Desenvolvedor Full-Stack",
+                        "image": "pedro-colaborador.webp"
+                    },
+                    {
+                        "name": "Cleverton",
+                        "role": "Desenvolvedor",
+                        "image": "cleverton-colaborador.jpg"
+                    },
+                    {
+                        "name": "Douglas",
+                        "role": "Desenvolvedor",
+                        "image": "douglas-colaborador.jpg"
+                    },
+                    {
+                        "name": "Isabela",
+                        "role": "Designer",
+                        "image": "isabela-colaborador.jpg"
+                    },
+                    {
+                        "name": "José",
+                        "role": "Desenvolvedor",
+                        "image": "josé-colaborador.jpg"
+                    },
+                    {
+                        "name": "Kevin",
+                        "role": "Desenvolvedor",
+                        "image": "kevin-colaborador.jpg"
+                    },
+                    {
+                        "name": "Weverton",
+                        "role": "Desenvolvedor",
+                        "image": "weverton-colaborador.jpg"
+                    }
+                ]
+            },
             {
                 "title": "Sistema de Controle Financeiro",
                 "description": "Sistema completo para controle de finanças pessoais desenvolvido em PHP, com interface moderna e funcionalidades de relatórios.",
                 "technologies": ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
                 "github": "https://github.com/vinicius1504/Sistema-de-controle-financeiro",
-                "image": "sistema de controle financeiro.png"
+                "image": "sistema de controle financeiro.png",
+                "collaborators": [
+                    {
+                        "name": "Vinicius Leite",
+                        "role": "Desenvolvedor Full-Stack",
+                        "image": "vinicius-colaborador.jpg"
+                    }
+                ]
             },
             {
                 "title": "E-commerce de Games",
                 "description": "Plataforma de e-commerce especializada em jogos, com sistema de carrinho, pagamentos e gerenciamento de produtos.",
                 "technologies": ["Node.js", "React", "MongoDB", "Express"],
                 "github": "https://github.com/vinicius1504/E-commerceGames",
-                "image": "ecomercegames.jpg"
+                "image": "ecomercegames.jpg",
+                "collaborators": [
+                    {
+                        "name": "Vinicius Leite",
+                        "role": "Desenvolvedor Full-Stack",
+                        "image": "vinicius-colaborador.jpg"
+                    }
+                ]
             },
             {
                 "title": "Sistema de Backup",
                 "description": "Ferramenta automatizada para backup de arquivos e bancos de dados, com agendamento e verificação de integridade.",
                 "technologies": ["Python", "Shell Script", "MySQL", "Cron"],
                 "github": "https://github.com/vinicius1504/Sistema-de-backup",
-                "image": "backup.png"
+                "image": "backup.png",
+                "collaborators": [
+                    {
+                        "name": "Vinicius Leite",
+                        "role": "Desenvolvedor Backend",
+                        "image": "vinicius-colaborador.jpg"
+                    }
+                ]
             }
+                      
         ]
     },
     "footer": {

@@ -58,21 +58,91 @@
         "description": "Complete system for personal finance control developed in PHP, with modern interface and reporting functionalities.",
         "technologies": ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
         "github": "https://github.com/vinicius1504/Sistema-de-controle-financeiro",
-        "image": "sistema de controle financeiro.png"
+        "image": "sistema de controle financeiro.png",
+        "collaborators": [
+          {
+            "name": "Vinicius Leite",
+            "role": "Full-Stack Developer",
+            "image": "vinicius-colaborador.jpg"
+          }
+        ]
       },
       {
         "title": "Games E-commerce",
         "description": "E-commerce platform specialized in games, with shopping cart system, payments, and product management.",
         "technologies": ["Node.js", "React", "MongoDB", "Express"],
         "github": "https://github.com/vinicius1504/E-commerceGames", 
-        "image": "ecomercegames.jpg"
+        "image": "ecomercegames.jpg",
+        "collaborators": [
+          {
+            "name": "Vinicius Leite",
+            "role": "Full-Stack Developer",
+            "image": "vinicius-colaborador.jpg"
+          }
+        ]
       },
       {
         "title": "Backup System",
         "description": "Automated tool for file and database backup, with scheduling and integrity verification.",
         "technologies": ["Python", "Shell Script", "MySQL", "Cron"],
         "github": "https://github.com/vinicius1504/Sistema-de-backup",
-        "image": "backup.png"
+        "image": "backup.png",
+        "collaborators": [
+          {
+            "name": "Vinicius Leite",
+            "role": "Backend Developer",
+            "image": "vinicius-colaborador.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Globoo.io",
+        "description": "Complete financial system, containing: exchange, crowdfunding, tokenizer, bank, community cycle",
+        "technologies": ["Angular", "Node.js", "AWS", "C++"],
+        "github": "https://app.globoo.io",
+        "image": "globoo.png",
+        "collaborators": [
+          {
+            "name": "Vinicius Leite",
+            "role": "Front-end Developer",
+            "image": "vinicius-colaborador.jpg"
+          },
+          {
+            "name": "Pedro Trotta",
+            "role": "Full-Stack Developer",
+            "image": "pedro-colaborador.webp"
+          },
+          {
+            "name": "Cleverton",
+            "role": "Developer",
+            "image": "cleverton-colaborador.jpg"
+          },
+          {
+            "name": "Douglas",
+            "role": "Developer",
+            "image": "douglas-colaborador.jpg"
+          },
+          {
+            "name": "Isabela",
+            "role": "Designer",
+            "image": "isabela-colaborador.jpg"
+          },
+          {
+            "name": "José",
+            "role": "Developer",
+            "image": "josé-colaborador.jpg"
+          },
+          {
+            "name": "Kevin",
+            "role": "Developer",
+            "image": "kevin-colaborador.jpg"
+          },
+          {
+            "name": "Weverton",
+            "role": "Developer",
+            "image": "weverton-colaborador.jpg"
+          }
+        ]
       }
     ]
   },
