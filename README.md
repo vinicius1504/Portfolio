@@ -1,4 +1,4 @@
-# 🌟 Portfolio Trotta
+# 🌟 Portfolio Vinicius
 
 [![React](https://img.shields.io/badge/React-18.x-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
 [![Three.js](https://img.shields.io/badge/Three.js-Latest-000000?style=for-the-badge&logo=three.js&logoColor=white)](https://threejs.org/)
