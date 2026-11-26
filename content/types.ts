@@ -2,7 +2,7 @@ export type Lang = "pt" | "en";
 
 export type Experience = {
   company: string;
-  url: string;
+  url?: string;
   position: string;
   period: string;
   current?: boolean;
@@ -19,10 +19,25 @@ export type Project = {
   title: string;
   description: string;
   technologies: string[];
-  image: string;
+  /** Capa do projeto. Sem imagem, o card mostra uma capa gerada com o nome. */
+  image?: string;
+  /** Cor da capa gerada. */
+  accent?: string;
   link: { href: string; kind: "site" | "github" };
   featured?: boolean;
   collaborators?: Collaborator[];
+};
+
+export type Education = {
+  title: string;
+  school: string;
+  status: string;
+};
+
+export type Course = {
+  title: string;
+  school: string;
+  hours: string;
 };
 
 export type Content = {
@@ -39,6 +54,15 @@ export type Content = {
   };
   skills: { eyebrow: string; title: string };
   experience: { eyebrow: string; title: string; current: string; items: Experience[] };
+  education: {
+    eyebrow: string;
+    title: string;
+    degreesTitle: string;
+    coursesTitle: string;
+    degrees: Education[];
+    courses: Course[];
+    languages: string;
+  };
   projects: {
     eyebrow: string;
     title: string;

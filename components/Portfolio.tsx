@@ -147,10 +147,14 @@ export function Portfolio({ lang, content: c }: { lang: Lang; content: Content }
                   <header>
                     <div>
                       <h3>{item.position}</h3>
-                      <a href={item.url} target="_blank" rel="noreferrer" className="company">
-                        {item.company}
-                        <ArrowUpRightIcon size={14} />
-                      </a>
+                      {item.url ? (
+                        <a href={item.url} target="_blank" rel="noreferrer" className="company">
+                          {item.company}
+                          <ArrowUpRightIcon size={14} />
+                        </a>
+                      ) : (
+                        <span className="company">{item.company}</span>
+                      )}
                     </div>
                     <div className="period">
                       {item.current && <span className="badge">{c.experience.current}</span>}
@@ -162,6 +166,40 @@ export function Portfolio({ lang, content: c }: { lang: Lang; content: Content }
               </li>
             ))}
           </ol>
+        </section>
+
+        <section id="education" className="section container">
+          <SectionHead eyebrow={c.education.eyebrow} title={c.education.title} />
+          <div className="education">
+            <div className="card spot edu-card" data-reveal>
+              <h3>{c.education.degreesTitle}</h3>
+              <ul className="degrees">
+                {c.education.degrees.map((degree) => (
+                  <li key={degree.title}>
+                    <strong>{degree.title}</strong>
+                    <span>
+                      {degree.school} · {degree.status}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+              <p className="languages">{c.education.languages}</p>
+            </div>
+            <div className="card spot edu-card" data-reveal>
+              <h3>{c.education.coursesTitle}</h3>
+              <ul className="courses">
+                {c.education.courses.map((course) => (
+                  <li key={course.title}>
+                    <span>
+                      <strong>{course.title}</strong>
+                      <small>{course.school}</small>
+                    </span>
+                    <em>{course.hours}</em>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </section>
 
         <section id="projects" className="section container">
@@ -181,12 +219,23 @@ export function Portfolio({ lang, content: c }: { lang: Lang; content: Content }
                   tabIndex={-1}
                   aria-hidden
                 >
-                  <Image
-                    src={project.image}
-                    alt=""
-                    fill
-                    sizes={project.featured ? "(max-width: 900px) 100vw, 640px" : "(max-width: 900px) 100vw, 380px"}
-                  />
+                  {project.image ? (
+                    <Image
+                      src={project.image}
+                      alt=""
+                      fill
+                      sizes={project.featured ? "(max-width: 900px) 100vw, 640px" : "(max-width: 900px) 100vw, 380px"}
+                    />
+                  ) : (
+                    <span className="cover" style={{ "--accent": project.accent } as React.CSSProperties}>
+                      <span className="cover-bar">
+                        <i />
+                        <i />
+                        <i />
+                      </span>
+                      <span className="cover-title">{project.title}</span>
+                    </span>
+                  )}
                 </a>
                 <div className="project-body">
                   <h3>{project.title}</h3>

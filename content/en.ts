@@ -4,7 +4,7 @@ export const en: Content = {
   meta: {
     title: "Vinicius Leite · Developer",
     description:
-      "Portfolio of Vinicius Leite, a developer based in Campo Grande, Brazil. Websites, systems and web automations.",
+      "Portfolio of Vinicius Leite, a Full-Stack Developer based in Campo Grande, Brazil. TypeScript, Node.js, React, automations and WhatsApp integrations.",
   },
   nav: {
     about: "About",
@@ -15,10 +15,10 @@ export const en: Content = {
   },
   hero: {
     eyebrow: "Hi, I'm",
-    role: "Software developer",
+    role: "Full-Stack Developer",
     location: "Campo Grande - Mato Grosso do Sul, Brazil",
     description:
-      "I'm a Junior Developer and I've been programming for more than 3 years. I build websites, systems and web automations.",
+      "Full-Stack Developer with experience in TypeScript, Node.js (Fastify) and React. I build new systems and handle the maintenance, optimization and modernization of existing applications, including legacy code migration.",
     ctaProjects: "View projects",
     ctaContact: "Get in touch",
     scroll: "Scroll to see more",
@@ -33,13 +33,26 @@ export const en: Content = {
     current: "Current",
     items: [
       {
+        company: "Dourado Cash",
+        position: "Mid-level Full-Stack Developer (Contractor)",
+        period: "February, 2026 - December, 2026",
+        description:
+          "Full-stack development with React, Vite and Fastify, focused on building new systems and on the maintenance, optimization and continuous evolution of the company's applications, ensuring quality, performance and scalability.",
+      },
+      {
+        company: "Milliontech",
+        position: "Junior Full-Stack Developer",
+        period: "Freelance",
+        description:
+          "Full-stack development with React, Vite and Fastify. Implemented new features, handled internal company requests and migrated legacy code to up-to-date technologies.",
+      },
+      {
         company: "globoo.io",
         url: "https://globoo.io",
-        position: "Junior Developer",
-        period: "April, 2024 - Present",
-        current: true,
+        position: "Junior Software Developer",
+        period: "April, 2025 - December, 2025",
         description:
-          "Development and maintenance of web applications; implementation of APIs and integrations; participation in sprints, code reviews and documentation; support for deployments.",
+          "Project with Angular (front end), a microservices back end, automation in Python and systems maintenance.",
       },
       {
         company: "Lima e Pegolo",
@@ -67,6 +80,32 @@ export const en: Content = {
       },
     ],
   },
+  education: {
+    eyebrow: "Education",
+    title: "Education and courses",
+    degreesTitle: "Degrees",
+    coursesTitle: "Courses",
+    degrees: [
+      {
+        title: "Postgraduate degree in Machine Learning Engineering",
+        school: "Anhanguera",
+        status: "In progress",
+      },
+      {
+        title: "Systems Analysis and Development",
+        school: "Uniasselvi",
+        status: "Completed",
+      },
+    ],
+    courses: [
+      { title: "Web Development – Front End", school: "SENAC", hours: "108 h" },
+      { title: "Computer Maintenance and Electronics", school: "CEBRAC", hours: "108 h" },
+      { title: "Web Programming", school: "ESCON", hours: "92 h" },
+      { title: "Power BI Fundamentals", school: "Fundação Bradesco", hours: "37 h" },
+      { title: "Introduction to Python", school: "Fundação Bradesco", hours: "37 h" },
+    ],
+    languages: "Languages: Portuguese (native), English (intermediate)",
+  },
   projects: {
     eyebrow: "Portfolio",
     title: "My projects",
@@ -92,6 +131,30 @@ export const en: Content = {
           { name: "Kevin", role: "Developer", image: "/people/kevin.jpg" },
           { name: "Weverton", role: "Developer", image: "/people/weverton.jpg" },
         ],
+      },
+      {
+        title: "DuckChat",
+        description:
+          "Multi-tenant SaaS for customer service, sales and scheduling over WhatsApp, with AI agents that reply instantly and hand off to a team member when the customer needs one.",
+        technologies: ["Next.js", "Hono", "PostgreSQL", "Drizzle", "TypeScript"],
+        accent: "#ffc42e",
+        link: { href: "https://github.com/vinicius1504/duckzap", kind: "github" },
+      },
+      {
+        title: "PlannerDuck",
+        description:
+          "Personal productivity platform with Kanban, a document editor, calendar and an AI-powered WhatsApp bot.",
+        technologies: ["Next.js", "React", "PostgreSQL", "Prisma", "Tailwind CSS"],
+        accent: "#8b5cf6",
+        link: { href: "https://github.com/vinicius1504/PlannerDuck", kind: "github" },
+      },
+      {
+        title: "Coup: Dev Edition",
+        description:
+          "A bluffing and deduction card game with a developer theme. You against 1 to 5 bots, right in the browser.",
+        technologies: ["Next.js", "React", "TypeScript", "Three.js", "Vitest"],
+        image: "/projects/coup-dev-edition.png",
+        link: { href: "https://coup-dev-edition.vercel.app", kind: "site" },
       },
       {
         title: "Financial Control System",
