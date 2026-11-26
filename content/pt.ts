@@ -145,7 +145,7 @@ export const pt: Content = {
         description:
           "Plataforma de produtividade pessoal com Kanban, editor de documentos, calendário e bot de WhatsApp com IA.",
         technologies: ["Next.js", "React", "PostgreSQL", "Prisma", "Tailwind CSS"],
-        accent: "#8b5cf6",
+        image: "/projects/plannerduck.png",
         link: { href: "https://github.com/vinicius1504/PlannerDuck", kind: "github" },
       },
       {
