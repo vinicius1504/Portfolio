@@ -114,6 +114,15 @@ export const en: Content = {
     team: "Team",
     items: [
       {
+        title: "DuckChat",
+        description:
+          "Multi-tenant SaaS for customer service, sales and scheduling over WhatsApp, with AI agents that reply instantly and hand off to a team member when the customer needs one.",
+        technologies: ["Next.js", "Hono", "PostgreSQL", "Drizzle", "TypeScript"],
+        image: "/projects/duckchat.png",
+        link: { href: "https://duckchat.viniciusleite.dev.br", kind: "site" },
+        featured: true,
+      },
+      {
         title: "Globoo.io",
         description:
           "Complete financial system, with exchange, crowdfunding, tokenizer, bank and community cycle.",
@@ -133,20 +142,20 @@ export const en: Content = {
         ],
       },
       {
-        title: "DuckChat",
-        description:
-          "Multi-tenant SaaS for customer service, sales and scheduling over WhatsApp, with AI agents that reply instantly and hand off to a team member when the customer needs one.",
-        technologies: ["Next.js", "Hono", "PostgreSQL", "Drizzle", "TypeScript"],
-        accent: "#ffc42e",
-        link: { href: "https://github.com/vinicius1504/duckzap", kind: "github" },
-      },
-      {
         title: "PlannerDuck",
         description:
           "Personal productivity platform with Kanban, a document editor, calendar and an AI-powered WhatsApp bot.",
         technologies: ["Next.js", "React", "PostgreSQL", "Prisma", "Tailwind CSS"],
         image: "/projects/plannerduck.png",
         link: { href: "https://github.com/vinicius1504/PlannerDuck", kind: "github" },
+      },
+      {
+        title: "Controle Financeiro",
+        description:
+          "Family finance tracker: the admin registers the family members, and everyone sees and records income and expenses on the same data, with accounts, categories and a monthly dashboard.",
+        technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Supabase"],
+        image: "/projects/controle-financeiro-familia.png",
+        link: { href: "https://controle-financeiro-gamma-six.vercel.app", kind: "site" },
       },
       {
         title: "Coup: Dev Edition",

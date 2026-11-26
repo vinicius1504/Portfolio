@@ -1461,3 +1461,10 @@ textarea {
     transform: none;
   }
 }
+
+/* Destaques alternam o lado da imagem. */
+@media (min-width: 901px) {
+  .project.featured:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+}
